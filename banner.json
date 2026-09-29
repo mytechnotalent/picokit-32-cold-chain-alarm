@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-32-cold-chain-alarm",
+  "eyebrow": "PICOKIT // LESSON 32",
+  "title": "PICOKIT // COLD CHAIN ALARM",
+  "subtitle": "LATCHED BAND BREACH + DOOR LATCH SERVO + AUTHENTICATED HEARTBEAT",
+  "accent": "#3FFF00",
+  "dim": "#279E00",
+  "white": "#D8F6DB",
+  "cyan": "#7FD8E0",
+  "bg": "#041100",
+  "bg_edge": "#010500",
+  "icon": "drop",
+  "panel_status": "TEMP 23.0C  ·  BAND 2.0-8.0C  ·  ALARM 1",
+  "chips": [
+    {
+      "label": "TEMP",
+      "value": "23.0 C"
+    },
+    {
+      "label": "BAND",
+      "value": "2.0-8.0 C"
+    },
+    {
+      "label": "DOOR",
+      "value": "90 deg"
+    },
+    {
+      "label": "RADIO",
+      "value": "-31 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00032  seq 21  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 21",
+    "[+] temp 23.0 outside band  alarm latched  door open",
+    "[+] button ack  alarm cleared  door closed  ack sent"
+  ],
+  "categories": [
+    "COLD",
+    "LATCH",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "CC-01",
+      "label": "breach",
+      "value": "latch"
+    },
+    {
+      "tag": "CC-02",
+      "label": "door",
+      "value": "90 deg"
+    },
+    {
+      "tag": "CC-03",
+      "label": "ack",
+      "value": "button"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  SENSE  ·  LATCH  ·  RADIO  ==[ COLD ]=="
+  ],
+  "layout": "split",
+  "stat": "23.0 C"
+}
